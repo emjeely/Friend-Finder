@@ -1,0 +1,44 @@
+var friends = [
+  {
+      name:"Michael",
+      photo:"https://blog.close.io/hs-fs/hubfs/michael%20scott%20iamge.jpg?width=1601&height=1000&name=michael%20scott%20iamge.jpg",
+      scores:[3,3,2,5,2,5,3,4,2,4]
+  },
+  {
+      name:"Sarah",
+      photo:"https://media.nngroup.com/media/people/photos/gibbons_sarah-800px.jpg.400x400_q95_autocrop_crop_upscale.jpg",
+      scores:[1,3,4,3,2,3,5,4,2,1]
+  },
+  {
+      name:"Hugh",
+      photo:"https://www.profile4men.com/wp-content/uploads/2016/11/img-Rob_BW.jpg",
+      scores:[1,5,2,1,3,2,1,3,3,5]
+  },
+  {
+      name:"Angelina",
+      photo:"http://2.bp.blogspot.com/-jxU9L4ZMZ1M/VBHWbUnUbZI/AAAAAAAAAPY/qF_2UVaC8XQ/s1600/IMG_3564.JPG",
+      scores:[5,5,5,1,5,4,5,2,3,5]
+  },
+  {
+      name:"Dylan",
+      photo:"https://images.unsplash.com/photo-1529688530647-93a6e1916f5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      scores:[1,4,3,1,3,2,1,1,5,1]
+  },
+  {
+      name:"Addie",
+      photo:"http://cdn4.sussexdirectories.com/rms/rms_photos/sized/25/82/298225-726380-1_320x400.jpg?pu=1478203176",
+      scores:[2,1,5,5,1,3,3,5,3,3]
+  },
+  {
+    name:"Carson",
+    photo:"http://static1.squarespace.com/static/54f74f23e4b0952b4e0011c0/54f9cb03e4b0d8458d5fcbc7/5ad541fb562fa7b58d8ee392/1523959227160/chris+hanna+bb.jpg?format=1500w",
+    scores:[1,3,1,1,1,2,1,1,1,1]
+},
+{
+  name:"Bob",
+  photo:"http://profilepicturesdp.com/wp-content/uploads/2018/07/profile-picture-guy.png",
+  scores:[4,2,4,1,1,2,1,5,4,2]
+},
+];
+
+module.exports=friends;

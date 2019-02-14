@@ -6,6 +6,10 @@
   <title>Friend Finder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -15,15 +19,69 @@
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
   <script src="main.js"></script> -->
 </head>
+
+<style>
+  body {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-wFmGMn3dRYtdG_GuXT_7YExwve0LSK9DWEQdihJdljDBHnLOnw");
+    }
+    
+  h1{
+    font-family: 'Passion One', cursive;
+    font-size: 110px;
+    text-align: center;
+    margin-bottom: 7%;
+    color: rgb(41, 175, 252);
+    letter-spacing: 4px;
+  }
+
+  h2{
+    /* text-align: center; */
+  }
+
+  ol{
+    /* color: rgb(67, 184, 252); */
+    
+  }
+
+  li{
+    font-size: 40px;
+  }
+
+  h2,h4,h5{
+    font-family: 'Boogaloo', cursive;
+  }
+
+  p{
+    /* color: rgb(67, 184, 252); */
+    
+  }
+     #bord {
+        color: black;
+        border-right: 2px solid black;
+        padding: 1%;
+        margin-right:1%;
+    }
+    a{
+      color: black;
+    }
+    a:hover {
+        color: rgb(0, 132, 255);
+    }
+    #link {
+        border-right: none;
+        padding: 0%;
+        text-decoration: none;
+    }
+    
+</style>
+
 <body>
 <div class="container">
-  <div class="jumbotron">
-    <!-- <img src="https://www.logolynx.com/images/logolynx/51/5148cb7179795ccbebca6c18da7dbbab.png"> -->
-  </div>
+  <h1>Survey Questions</h1>
 </div>
 <div class="container">
   <div class="about">
-    <h1 class="h1">About You</h1>
+    <h2 class="h1">About You</h2>
   <hr>
 <form>
   <div class="form-row">
@@ -51,7 +109,7 @@
           <label for="choice">Strongly-Disagree</label>
           <label class="radio-inline"><input type="radio" name="q1" value="1">1</label>
           <label class="radio-inline"><input type="radio" name="q1" value="2">2</label>
-          <label class="radio-inline"><input type="radio" name="q1" value="3">3</label> // change fromoptradio
+          <label class="radio-inline"><input type="radio" name="q1" value="3">3</label>
           <label class="radio-inline"><input type="radio" name="q1" value="4">4</label>
           <label class="radio-inline"><input type="radio" name="q1" value="5">5</label>
           <label for="choice">Strongly-Agree</label>
@@ -212,15 +270,23 @@
     </div>
       </li>
   </ol>
-
-  <button type="button" class="btn btn-warning btn-lg btn-block" id="submit">Submit</button>
+  
+  <button type="button" class="btn btn-outline-primary" id="submit">Submit</button>
+  <!-- <button type="button" class="btn btn-warning btn-lg btn-block" id="submit">Submit</button> -->
 </div>
 <br>
+
+
 <!-- Links to git hub and json data -->
-<h5> <a href="/api/friends">API Friend List</a>
-  <a href="https://github.com/satinder042890/friend-finder-node-express-app">GitHub Repo</a>
+<h5>
+    <a id = "bord" href="/api/friends">API Friend List    </a>
+    <!-- <p>|</p> -->
+    <a href="https://github.com/emjeely/Friend-Finder"> GitHub Repo</a>
+
 </h5>
 </div>
+
+
 <!-- Modal that pop up with matching personality of user -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
