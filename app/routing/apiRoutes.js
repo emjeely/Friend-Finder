@@ -7,12 +7,14 @@ app.get("/api/friends",function(req,res){
 });
 
 app.post("/api/friends",function(req,res){
-    var friend=req.body;
+   
+    var friends=req.body;
     var match={
         name:"",
         photo:"",
         scoreDiff:0
     }
+     console.log(friends);
     var difference;
     for(var i=0 ; i<friends.length; i++){
         var currentFriend=friends[i];
